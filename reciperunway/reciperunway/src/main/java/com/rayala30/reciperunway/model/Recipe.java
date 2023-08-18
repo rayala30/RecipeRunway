@@ -1,5 +1,7 @@
 package com.rayala30.reciperunway.model;
 
+import com.rayala30.reciperunway.model.Ingredient;
+
 import java.util.List;
 
 public class Recipe {

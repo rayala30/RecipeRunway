@@ -6,16 +6,18 @@ public class Ingredient {
     int foodId;
     String foodCategory;
     int quantity;
+    int weight;
     String measure;
     boolean hasInStock;
 
     // Constructors
 
-    public Ingredient(int foodId, String foodCategory, int quantity, String measure) {
+    public Ingredient(int foodId, String foodCategory, int quantity, String measure, int weight) {
         this.foodId = foodId;
         this.foodCategory = foodCategory;
         this.quantity = quantity;
         this.measure = measure;
+        this.weight = weight;
     }
 
 
@@ -35,6 +37,10 @@ public class Ingredient {
 
     public String getMeasure() {
         return measure;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
     public boolean isHasInStock() {
@@ -59,6 +65,10 @@ public class Ingredient {
 
     public void setMeasure(String measure) {
         this.measure = measure;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     public void setHasInStock(boolean hasInStock) {

@@ -1,4 +1,8 @@
 package com.rayala30.reciperunway.service;
 
-public class RecipeService {
+import com.rayala30.reciperunway.model.Recipe;
+
+public interface RecipeService {
+
+    Recipe getRecipe();
 }
