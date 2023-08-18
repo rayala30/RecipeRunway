@@ -1,8 +1,8 @@
 package com.rayala30.reciperunway.service;
 
-import com.rayala30.reciperunway.model.Recipe;
+import com.rayala30.reciperunway.model.RecipeCard;
 
 public interface RecipeService {
 
-    Recipe getRecipe();
+    RecipeCard getRecipe();
 }

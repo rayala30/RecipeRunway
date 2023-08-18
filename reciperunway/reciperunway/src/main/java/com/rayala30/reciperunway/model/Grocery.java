@@ -7,15 +7,15 @@ import java.util.List;
 public class Grocery extends Ingredient {
 
     // Instance variables
-    int totalQuantity;
-    String storeAisle;
-    List<Ingredient> ingredientList;
-    boolean isAvailable;
+    private int totalQuantity;
+    private String storeAisle;
+    private List<Ingredient> ingredientList;
+    private boolean isAvailable;
 
 
     // Constructor
-    public Grocery(int foodId, String foodCategory, int quantity, String measure) {
-        super(foodId, foodCategory, quantity, measure);
+    public Grocery(int foodId, String foodCategory, int quantity, String measure, int weight) {
+        super(foodId, foodCategory, quantity, measure, weight);
     }
 
     // Getters

@@ -1,33 +1,38 @@
 package com.rayala30.reciperunway.model;
 
-import com.rayala30.reciperunway.model.Ingredient;
+
+import jakarta.validation.constraints.NotEmpty;
 
 import java.util.List;
 
-public class Recipe {
+public class RecipeCard {
 
     // Instance variables
-    String mealType;
-    String dishType;
-    String cuisineType;
-    int recipeId;
-    int servingSize;
-    List<Ingredient> ingredientsList;
-    String instructions;
-    int caloriesPerServing;
 
-    // Constructors
-
-    public Recipe(String mealType, String dishType, String cuisineType) {
-        this.mealType = mealType;
-        this.dishType = dishType;
-        this.cuisineType = cuisineType;
-    }
-
-    public Recipe() {}
+    private int recipeId;
+    @NotEmpty
+    private String recipeImgUrl;
+    @NotEmpty
+    private String recipeName;
+    private String mealType;
+    private String dishType;
+    private String cuisineType;
+    private int servingSize;
+    private List<Ingredient> ingredientsList;
+    private String instructions;
+    private int caloriesPerServing;
 
 
     // Getters
+
+
+    public String getRecipeImgUrl() {
+        return recipeImgUrl;
+    }
+
+    public String getRecipeName() {
+        return recipeName;
+    }
 
     public String getMealType() {
         return mealType;
@@ -64,6 +69,14 @@ public class Recipe {
 
     // Setters
 
+
+    public void setRecipeImgUrl(String recipeImgUrl) {
+        this.recipeImgUrl = recipeImgUrl;
+    }
+
+    public void setRecipeName(String recipeName) {
+        this.recipeName = recipeName;
+    }
 
     public void setMealType(String mealType) {
         this.mealType = mealType;

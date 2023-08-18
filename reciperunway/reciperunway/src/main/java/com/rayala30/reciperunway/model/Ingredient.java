@@ -3,12 +3,12 @@ package com.rayala30.reciperunway.model;
 public class Ingredient {
 
     // Instance variables
-    int foodId;
-    String foodCategory;
-    int quantity;
-    int weight;
-    String measure;
-    boolean hasInStock;
+    private int foodId;
+    private String foodCategory;
+    private int quantity;
+    private int weight;
+    private String measure;
+    private boolean hasInStock;
 
     // Constructors
 
@@ -49,8 +49,6 @@ public class Ingredient {
 
 
     // Setters
-
-
     public void setFoodId(int foodId) {
         this.foodId = foodId;
     }

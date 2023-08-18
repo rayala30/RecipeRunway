@@ -1,6 +1,6 @@
 package com.rayala30.reciperunway.dao;
 
-import com.rayala30.reciperunway.model.Recipe;
+import com.rayala30.reciperunway.model.RecipeCard;
 
 import java.util.List;
 
@@ -10,24 +10,24 @@ import java.util.List;
  *  Saved recipes can then be retrieved, updated, deleted from the database.
  */
 
-public class JdbcRecipeDao implements RecipeDao {
+public class JdbcRecipeCardDao implements RecipeCardDao {
     @Override
-    public List<Recipe> getRecipes() {
+    public List<RecipeCard> getRecipes() {
         return null;
     }
 
     @Override
-    public Recipe getRecipeById(int id) {
+    public RecipeCard getRecipeById(int id) {
         return null;
     }
 
     @Override
-    public Recipe createRecipe(Recipe recipe) {
+    public RecipeCard createRecipe(RecipeCard recipeCard) {
         return null;
     }
 
     @Override
-    public Recipe updateRecipe(Recipe recipe) {
+    public RecipeCard updateRecipe(RecipeCard recipeCard) {
         return null;
     }
 
