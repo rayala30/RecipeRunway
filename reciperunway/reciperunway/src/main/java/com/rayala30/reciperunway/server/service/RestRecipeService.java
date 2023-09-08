@@ -1,6 +1,6 @@
-package com.rayala30.reciperunway.service;
+package com.rayala30.reciperunway.server.service;
 
-import com.rayala30.reciperunway.model.RecipeCard;
+import com.rayala30.reciperunway.server.model.RecipeCard;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 

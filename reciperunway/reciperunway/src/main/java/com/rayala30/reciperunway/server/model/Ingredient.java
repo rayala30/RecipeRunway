@@ -1,4 +1,4 @@
-package com.rayala30.reciperunway.model;
+package com.rayala30.reciperunway.server.model;
 
 public class Ingredient {
 

@@ -1,4 +1,4 @@
-package com.rayala30.reciperunway.controller;
+package com.rayala30.reciperunway.server.controller;
 
 
 import org.springframework.web.bind.annotation.RestController;

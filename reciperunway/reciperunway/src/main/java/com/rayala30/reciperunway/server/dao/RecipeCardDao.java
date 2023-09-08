@@ -1,6 +1,6 @@
-package com.rayala30.reciperunway.dao;
+package com.rayala30.reciperunway.server.dao;
 
-import com.rayala30.reciperunway.model.RecipeCard;
+import com.rayala30.reciperunway.server.model.RecipeCard;
 
 import java.util.List;
 

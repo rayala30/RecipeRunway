@@ -1,4 +1,4 @@
-package com.rayala30.reciperunway.model;
+package com.rayala30.reciperunway.server.model;
 
 
 import jakarta.validation.constraints.NotEmpty;
@@ -18,7 +18,6 @@ public class RecipeCard {
     private String dishType;
     private String cuisineType;
     private int servingSize;
-    private List<Ingredient> ingredientsList;
     private String instructions;
     private int caloriesPerServing;
 
@@ -52,10 +51,6 @@ public class RecipeCard {
 
     public int getServingSize() {
         return servingSize;
-    }
-
-    public List<Ingredient> getIngredientsList() {
-        return ingredientsList;
     }
 
     public String getInstructions() {
@@ -98,15 +93,16 @@ public class RecipeCard {
         this.servingSize = servingSize;
     }
 
-    public void setIngredientsList(List<Ingredient> ingredientsList) {
-        this.ingredientsList = ingredientsList;
-    }
-
     public void setInstructions(String instructions) {
         this.instructions = instructions;
     }
 
     public void setCaloriesPerServing(int caloriesPerServing) {
         this.caloriesPerServing = caloriesPerServing;
+    }
+
+    // Methods
+    public List<Ingredient> getIngredientsList() {
+        return null;
     }
 }

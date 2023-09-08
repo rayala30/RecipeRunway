@@ -1,4 +1,4 @@
-package com.rayala30.reciperunway.exception;
+package com.rayala30.reciperunway.server.exception;
 
 public class DaoException extends RuntimeException {
     public DaoException() {
