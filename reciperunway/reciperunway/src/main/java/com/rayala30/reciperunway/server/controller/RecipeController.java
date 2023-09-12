@@ -5,10 +5,7 @@ import com.rayala30.reciperunway.server.dao.RecipeCardDao;
 import com.rayala30.reciperunway.server.model.RecipeCard;
 import com.rayala30.reciperunway.server.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -33,6 +30,10 @@ public class RecipeController {
         return recipeCardDao.getRecipes();
     }
 
+    @GetMapping
+    public RecipeCard getRecipeCardById(@PathVariable int id) {
+        return recipeCardDao.getRecipeById(id);
+    }
 
 
 
