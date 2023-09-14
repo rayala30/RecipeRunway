@@ -1,24 +1,30 @@
 package com.rayala30.reciperunway.server.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotEmpty;
+import org.springframework.data.relational.core.sql.In;
 
 import java.util.List;
 
 public class RecipeCard {
 
     // Instance variables
-
     private int recipeId;
     @NotEmpty
+    @JsonProperty("image")
     private String recipeImgUrl;
     @NotEmpty
+    @JsonProperty("label")
     private String recipeName;
+    @JsonProperty("ingredients")
+    private List<Ingredient> ingredients;
     private String mealType;
     private String dishType;
     private String cuisineType;
+    @JsonProperty("yield")
     private int servingSize;
-    private String instructions;
+    @JsonProperty("calories")
     private int caloriesPerServing;
 
 
@@ -51,10 +57,6 @@ public class RecipeCard {
 
     public int getServingSize() {
         return servingSize;
-    }
-
-    public String getInstructions() {
-        return instructions;
     }
 
     public int getCaloriesPerServing() {
@@ -91,10 +93,6 @@ public class RecipeCard {
 
     public void setServingSize(int servingSize) {
         this.servingSize = servingSize;
-    }
-
-    public void setInstructions(String instructions) {
-        this.instructions = instructions;
     }
 
     public void setCaloriesPerServing(int caloriesPerServing) {
